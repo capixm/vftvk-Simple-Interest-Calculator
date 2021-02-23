@@ -12,16 +12,23 @@ function compute()
     }
 
     rate = parseFloat(document.getElementById("rate").value);
+    window.alert("Rate is "+rate);
+
     no_years = parseInt(document.getElementById("years").years);
+    window.alert("No. years is "+no_years);
 
     interest = principal * no_years * rate / 100;
+    window.alert("Interest amounts to "+interest);
 
     /*Date::getFullYear() returns current year in yyyy format*/
     current_year = parseInt(new Date().getFullYear());
+    window.alert("current year is "+current_year);
 
     final_year = current_year + no_years;
+    window.alert("final year is "+final_year);
 
     total_amount = principal + interest;
+    window.alert("Total Amount is "+total_amount);
 
     document.getElementById("result").innerHTML = 
     "<br/>If you deposit "+principal+" at a interest rate of "+rate+"%, "+
