@@ -18,6 +18,6 @@ function compute()
 
 function update_interest() {
     current_interest = document.getElementById("rate").value;
-    document.getElementById("text_rate").innerHTML = current_interest;
+    document.getElementById("text_rate").innerHTML = current_interest+"%";
 }
         
