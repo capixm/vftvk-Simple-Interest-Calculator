@@ -13,7 +13,6 @@ function compute()
 
     rate = parseFloat(document.getElementById("rate").value);
     
-
     var box_element = document.getElementById("years");
     no_years = parseInt(box_element.options[box_element.selectedIndex].value);
     
@@ -28,8 +27,10 @@ function compute()
     total_amount = principal + interest;
     
     document.getElementById("result").innerHTML = 
-    "<br/>If you deposit "+principal+" at a interest rate of "+rate+"%, "+
-    "you will receive an amount of "+total_amount+" in the year "+final_year;
+    "<br/>If you deposit <span class='highlight'>"+principal+
+    "</span> at a interest rate of <span class='highlight'>"+rate+"% </span>, "+
+    "you will receive an amount of <span class='highlight'> "+total_amount+
+    "</span> in the year <span class='highlight'>"+final_year+"</span>";
 
 }
 
