@@ -1,5 +1,5 @@
 body {background-color:tan;}
-h1{color:grey; font-family: Verdana;}
+h1{color:grey; font-family: Verdana; font-size: 14px;}
 
 .maindiv {
     background-color: white;
@@ -9,6 +9,12 @@ h1{color:grey; font-family: Verdana;}
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+
+    border-style: solid;
+    border-radius: 25px;
+
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 
