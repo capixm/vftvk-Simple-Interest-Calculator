@@ -10,9 +10,11 @@ function compute()
 
     final_year = current_year + no_years;
 
+    total_amount = principal + interest;
+
     document.getElementById("result").innerHTML = 
-    "If you deposit "+principal+" at a interest rate of "+rate+"%,"+
-    "you will receive an amount of "+(principal+interest)+" in the year"+final_year;
+    "If you deposit "+principal+" at a interest rate of "+rate+"%, "+
+    "you will receive an amount of "+total_amount+" in the year "+final_year;
 
 }
 
