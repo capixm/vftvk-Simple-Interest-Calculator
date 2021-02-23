@@ -1,7 +1,7 @@
 function compute()
 {
     principal = parseFloat(document.getElementById("principal").value);
-
+    window.alert("Principal equals to "+principal);
     /*although the "principal" texbox is built to prevent user from entering
       negative numbers, an additional control is added just in case the user
       types the number directly*/
@@ -21,7 +21,8 @@ function compute()
     window.alert("Interest amounts to "+interest);
 
     /*Date::getFullYear() returns current year in yyyy format*/
-    current_year = parseInt(new Date().getFullYear());
+    var d = new Date();
+    current_year = parseInt(d.getFullYear()); 
     window.alert("current year is "+current_year);
 
     final_year = current_year + no_years;
