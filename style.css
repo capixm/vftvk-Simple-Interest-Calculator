@@ -1,8 +1,10 @@
 body {background-color:black;}
-h1{color:grey; font-family: Verdana; font-size: 20px;}
+
+h1 {color:grey; font-family: Verdana; font-size: 24px;}
 
 .maindiv {
     background-color: white;
+    font-family: Verdana;
     color: black;
     width: 300px;
     padding-top: 20px;
@@ -16,7 +18,7 @@ h1{color:grey; font-family: Verdana; font-size: 20px;}
     margin-left: auto; 
     margin-right: auto;
 
-    text-align: center;
+    text-align: left;
 }
 
 
