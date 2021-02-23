@@ -2,6 +2,9 @@ function compute()
 {
     principal = parseFloat(document.getElementById("principal").value);
 
+    /*although the "principal" texbox is built to prevent user from entering
+      negative numbers, an additional control is added just in case the user
+      types the number directly*/
     if (principal <= 0 ) {
         window.alert("Enter a positive number");
         document.getElementById("principal").focus();
@@ -11,8 +14,9 @@ function compute()
     rate = parseFloat(document.getElementById("rate").value);
     no_years = parseInt(document.getElementById("years").years);
 
-    interest = principal * years * rate / 100;
+    interest = principal * no_years * rate / 100;
 
+    /*Date::getFullYear() returns current year in yyyy format*/
     current_year = parseInt(new Date().getFullYear());
 
     final_year = current_year + no_years;
