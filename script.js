@@ -28,7 +28,7 @@ function compute()
     
     document.getElementById("result").innerHTML = 
     "<br/>If you deposit <span class='highlight'>"+principal+
-    "</span> at a interest rate of <span class='highlight'>"+rate+"% </span>, "+
+    "</span> at an interest rate of <span class='highlight'>"+rate+"% </span>, "+
     "you will receive an amount of <span class='highlight'> "+total_amount+
     "</span> in the year <span class='highlight'>"+final_year+"</span>";
 
