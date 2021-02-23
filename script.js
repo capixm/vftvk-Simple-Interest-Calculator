@@ -14,7 +14,8 @@ function compute()
     rate = parseFloat(document.getElementById("rate").value);
     window.alert("Rate is "+rate);
 
-    no_years = parseInt(document.getElementById("years").years);
+    var box_element = document.getElementById("years");
+    no_years = parseInt(box_element.options[box_element.selectedIndex].value);
     window.alert("No. years is "+no_years);
 
     interest = principal * no_years * rate / 100;
