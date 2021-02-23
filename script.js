@@ -1,6 +1,13 @@
 function compute()
 {
     principal = parseFloat(document.getElementById("principal").value);
+
+    if (principal <= 0 ) {
+        window.alert("Enter a positive number");
+        document.getElementById("principal").focus();
+        return;
+    }
+
     rate = parseFloat(document.getElementById("rate").value);
     no_years = parseInt(document.getElementById("years").years);
 
@@ -13,7 +20,7 @@ function compute()
     total_amount = principal + interest;
 
     document.getElementById("result").innerHTML = 
-    "If you deposit "+principal+" at a interest rate of "+rate+"%, "+
+    "<br/>If you deposit "+principal+" at a interest rate of "+rate+"%, "+
     "you will receive an amount of "+total_amount+" in the year "+final_year;
 
 }
