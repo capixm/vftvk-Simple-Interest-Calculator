@@ -1,12 +1,12 @@
 function compute()
 {
-    principal = document.getElementById("principal").value;
-    rate = document.getElementById("rate").value;
-    no_years = document.getElementById("years").years;
+    principal = parseFloat(document.getElementById("principal").value);
+    rate = parseFloat(document.getElementById("rate").value);
+    no_years = parseInt(document.getElementById("years").years);
 
     interest = principal * years * rate / 100;
 
-    current_year = new Date().getFullYear();
+    current_year = parseInt(new Date().getFullYear());
 
     final_year = current_year + no_years;
 
